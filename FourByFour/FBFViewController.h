@@ -2,12 +2,20 @@
 //  FBFViewController.h
 //  FourByFour
 //
-//  Created by 1 torui on 12/05/02.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  This controller keeps model instance and tiles instances
 //
 
 #import <UIKit/UIKit.h>
+#import "FBFConstants.h"
+#import "FBFTileView.h"
+#import "FBFImageModel.h"
 
-@interface FBFViewController : UIViewController
+@interface FBFViewController : UIViewController{
+    IBOutlet UIView *puzzleView;  // one view which has 16 tileView.
+
+    FBFTileView  *_tiles[kColumns*kColumns];
+    FBFImageModel *_model;
+}
+@property (nonatomic, retain) UIView *puzzleView;
 
 @end

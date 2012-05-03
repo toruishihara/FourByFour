@@ -15,7 +15,10 @@
 		2D7032111552512A00C42AC5 /* FBFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7032101552512A00C42AC5 /* FBFAppDelegate.m */; };
 		2D7032141552512A00C42AC5 /* FBFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7032131552512A00C42AC5 /* FBFViewController.m */; };
 		2D7032171552512A00C42AC5 /* FBFViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7032151552512A00C42AC5 /* FBFViewController_iPhone.xib */; };
-		2D70321A1552512A00C42AC5 /* FBFViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7032181552512A00C42AC5 /* FBFViewController_iPad.xib */; };
+		2D70322B155256F400C42AC5 /* FBFTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D70322A155256F400C42AC5 /* FBFTileView.m */; };
+		2D70322D15525A4B00C42AC5 /* koala.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D70322C15525A4B00C42AC5 /* koala.jpg */; };
+		2D70323015525BE700C42AC5 /* FBFImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D70322F15525BE700C42AC5 /* FBFImageModel.m */; };
+		2D703233155308CB00C42AC5 /* FBFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D703232155308CB00C42AC5 /* FBFConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +26,22 @@
 		2D7032001552512A00C42AC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D7032021552512A00C42AC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2D7032041552512A00C42AC5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2D7032081552512A00C42AC5 /* FourByFour-Info.plist */ = {isa = PBXFileReference; path = "FourByFour-Info.plist"; sourceTree = "<group>"; };
+		2D7032081552512A00C42AC5 /* FourByFour-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FourByFour-Info.plist"; sourceTree = "<group>"; };
 		2D70320A1552512A00C42AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2D70320C1552512A00C42AC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2D70320E1552512A00C42AC5 /* FourByFour-Prefix.pch */ = {isa = PBXFileReference; path = "FourByFour-Prefix.pch"; sourceTree = "<group>"; };
-		2D70320F1552512A00C42AC5 /* FBFAppDelegate.h */ = {isa = PBXFileReference; path = FBFAppDelegate.h; sourceTree = "<group>"; };
+		2D70320E1552512A00C42AC5 /* FourByFour-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FourByFour-Prefix.pch"; sourceTree = "<group>"; };
+		2D70320F1552512A00C42AC5 /* FBFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBFAppDelegate.h; sourceTree = "<group>"; };
 		2D7032101552512A00C42AC5 /* FBFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBFAppDelegate.m; sourceTree = "<group>"; };
-		2D7032121552512A00C42AC5 /* FBFViewController.h */ = {isa = PBXFileReference; path = FBFViewController.h; sourceTree = "<group>"; };
+		2D7032121552512A00C42AC5 /* FBFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBFViewController.h; sourceTree = "<group>"; };
 		2D7032131552512A00C42AC5 /* FBFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBFViewController.m; sourceTree = "<group>"; };
 		2D7032161552512A00C42AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FBFViewController_iPhone.xib; sourceTree = "<group>"; };
-		2D7032191552512A00C42AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FBFViewController_iPad.xib; sourceTree = "<group>"; };
+		2D703229155256F400C42AC5 /* FBFTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFTileView.h; sourceTree = "<group>"; };
+		2D70322A155256F400C42AC5 /* FBFTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFTileView.m; sourceTree = "<group>"; };
+		2D70322C15525A4B00C42AC5 /* koala.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = koala.jpg; sourceTree = "<group>"; };
+		2D70322E15525BE700C42AC5 /* FBFImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFImageModel.h; sourceTree = "<group>"; };
+		2D70322F15525BE700C42AC5 /* FBFImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFImageModel.m; sourceTree = "<group>"; };
+		2D7032311552FAB200C42AC5 /* FBFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFConstants.h; sourceTree = "<group>"; };
+		2D703232155308CB00C42AC5 /* FBFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBFConstants.m; path = ../FBFConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +88,17 @@
 		2D7032061552512A00C42AC5 /* FourByFour */ = {
 			isa = PBXGroup;
 			children = (
+				2D7032311552FAB200C42AC5 /* FBFConstants.h */,
+				2D703232155308CB00C42AC5 /* FBFConstants.m */,
+				2D70322E15525BE700C42AC5 /* FBFImageModel.h */,
+				2D70322F15525BE700C42AC5 /* FBFImageModel.m */,
+				2D703229155256F400C42AC5 /* FBFTileView.h */,
+				2D70322A155256F400C42AC5 /* FBFTileView.m */,
 				2D70320F1552512A00C42AC5 /* FBFAppDelegate.h */,
 				2D7032101552512A00C42AC5 /* FBFAppDelegate.m */,
 				2D7032121552512A00C42AC5 /* FBFViewController.h */,
 				2D7032131552512A00C42AC5 /* FBFViewController.m */,
 				2D7032151552512A00C42AC5 /* FBFViewController_iPhone.xib */,
-				2D7032181552512A00C42AC5 /* FBFViewController_iPad.xib */,
 				2D7032071552512A00C42AC5 /* Supporting Files */,
 			);
 			path = FourByFour;
@@ -93,6 +107,7 @@
 		2D7032071552512A00C42AC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2D70322C15525A4B00C42AC5 /* koala.jpg */,
 				2D7032081552512A00C42AC5 /* FourByFour-Info.plist */,
 				2D7032091552512A00C42AC5 /* InfoPlist.strings */,
 				2D70320C1552512A00C42AC5 /* main.m */,
@@ -154,7 +169,7 @@
 			files = (
 				2D70320B1552512A00C42AC5 /* InfoPlist.strings in Resources */,
 				2D7032171552512A00C42AC5 /* FBFViewController_iPhone.xib in Resources */,
-				2D70321A1552512A00C42AC5 /* FBFViewController_iPad.xib in Resources */,
+				2D70322D15525A4B00C42AC5 /* koala.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +183,9 @@
 				2D70320D1552512A00C42AC5 /* main.m in Sources */,
 				2D7032111552512A00C42AC5 /* FBFAppDelegate.m in Sources */,
 				2D7032141552512A00C42AC5 /* FBFViewController.m in Sources */,
+				2D70322B155256F400C42AC5 /* FBFTileView.m in Sources */,
+				2D70323015525BE700C42AC5 /* FBFImageModel.m in Sources */,
+				2D703233155308CB00C42AC5 /* FBFConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +206,6 @@
 				2D7032161552512A00C42AC5 /* en */,
 			);
 			name = FBFViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		2D7032181552512A00C42AC5 /* FBFViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D7032191552512A00C42AC5 /* en */,
-			);
-			name = FBFViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -253,6 +263,7 @@
 				GCC_PREFIX_HEADER = "FourByFour/FourByFour-Prefix.pch";
 				INFOPLIST_FILE = "FourByFour/FourByFour-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -264,6 +275,7 @@
 				GCC_PREFIX_HEADER = "FourByFour/FourByFour-Prefix.pch";
 				INFOPLIST_FILE = "FourByFour/FourByFour-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -287,6 +299,7 @@
 				2D70321F1552512A00C42AC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
