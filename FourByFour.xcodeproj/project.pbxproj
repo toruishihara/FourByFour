@@ -18,7 +18,7 @@
 		2D70322B155256F400C42AC5 /* FBFTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D70322A155256F400C42AC5 /* FBFTileView.m */; };
 		2D70322D15525A4B00C42AC5 /* koala.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D70322C15525A4B00C42AC5 /* koala.jpg */; };
 		2D70323015525BE700C42AC5 /* FBFImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D70322F15525BE700C42AC5 /* FBFImageModel.m */; };
-		2D703233155308CB00C42AC5 /* FBFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D703232155308CB00C42AC5 /* FBFConstants.m */; };
+		2D70323515530DCD00C42AC5 /* FBFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D70323415530DCD00C42AC5 /* FBFConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		2D70322E15525BE700C42AC5 /* FBFImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFImageModel.h; sourceTree = "<group>"; };
 		2D70322F15525BE700C42AC5 /* FBFImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFImageModel.m; sourceTree = "<group>"; };
 		2D7032311552FAB200C42AC5 /* FBFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFConstants.h; sourceTree = "<group>"; };
-		2D703232155308CB00C42AC5 /* FBFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBFConstants.m; path = ../FBFConstants.m; sourceTree = "<group>"; };
+		2D70323415530DCD00C42AC5 /* FBFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 		2D7032061552512A00C42AC5 /* FourByFour */ = {
 			isa = PBXGroup;
 			children = (
+				2D70323415530DCD00C42AC5 /* FBFConstants.m */,
 				2D7032311552FAB200C42AC5 /* FBFConstants.h */,
-				2D703232155308CB00C42AC5 /* FBFConstants.m */,
 				2D70322E15525BE700C42AC5 /* FBFImageModel.h */,
 				2D70322F15525BE700C42AC5 /* FBFImageModel.m */,
 				2D703229155256F400C42AC5 /* FBFTileView.h */,
@@ -185,7 +185,7 @@
 				2D7032141552512A00C42AC5 /* FBFViewController.m in Sources */,
 				2D70322B155256F400C42AC5 /* FBFTileView.m in Sources */,
 				2D70323015525BE700C42AC5 /* FBFImageModel.m in Sources */,
-				2D703233155308CB00C42AC5 /* FBFConstants.m in Sources */,
+				2D70323515530DCD00C42AC5 /* FBFConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
