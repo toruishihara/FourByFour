@@ -33,7 +33,8 @@
     int tileSize = _width/kColumns;
     CGRect rect = CGRectMake(x*tileSize, y*tileSize, tileSize, tileSize);
     CGImageRef imageRef = CGImageCreateWithImageInRect([_image CGImage], rect);
-    return [UIImage imageWithCGImage:imageRef];
+    UIImage *ret = [UIImage imageWithCGImage:imageRef];
+    return ret;
 }
 
 @end

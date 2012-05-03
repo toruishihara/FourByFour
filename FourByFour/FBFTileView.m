@@ -70,7 +70,7 @@
 // On touch moving, drag the tile
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    CGPoint pt; // touch point
+    CGPoint pt = {0,0}; // touch point
     CGRect rect = [self frame]; // new moved position
     
     // pickup one touch event
@@ -102,7 +102,7 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     CGRect rect = [self frame];
-    CGPoint pt;
+    CGPoint pt = {0,0};
     BOOL    moved = NO;
     int threshold = kMoveThreshold*_width;
     
