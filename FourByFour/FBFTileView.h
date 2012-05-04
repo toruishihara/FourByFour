@@ -14,10 +14,13 @@
     CGRect  _startRect;                         // original position
     BOOL    _canUp,_canDown,_canLeft,_canRight; // can move direction
     int     _width, _height;                    // keep for easy calculation
+    UISwipeGestureRecognizer *_swipeRecognizer;
 };
+- (void)setRecognizer;
 
 @property (strong, nonatomic) UIImage *image;   // part of image 
 @property (nonatomic) Boolean isBlank;          // blank or not
 @property (strong, nonatomic) FBFTileView *blankTile;   // ref of blank tile
+
 
 @end

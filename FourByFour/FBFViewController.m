@@ -44,9 +44,19 @@
             [_tiles[i] setBlankTile:_tiles[lastIdx]];
         }
         [puzzleView addSubview:_tiles[i]];
+        [_tiles[i] setRecognizer];
     }
     // push the blank tile on most back
     [puzzleView sendSubviewToBack:_tiles[lastIdx]];
+}
+
+-(void) oneTileRelocated
+{
+    int lastIdx = kColumns*kColumns-1; 
+
+    for (int i = lastIdx-1; i >= 0; --i) {
+        [_tiles[i] setRecognizer];
+    }    
 }
 
 - (void)viewDidUnload

@@ -16,6 +16,8 @@
     FBFTileView  *_tiles[kColumns*kColumns];
     FBFImageModel *_model;
 }
+-(void) oneTileRelocated;
+
 @property (nonatomic, retain) UIView *puzzleView;
 
 @end

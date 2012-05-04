@@ -9,6 +9,8 @@
 
 #import "FBFTileView.h"
 #import "FBFConstants.h"
+#import "FBFViewController.h"
+#import "FBFAppDelegate.h"
 
 @implementation FBFTileView
 
@@ -25,17 +27,69 @@
         isBlank = NO;
         _width = frame.size.width;
         _height = frame.size.height;
+        _swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
     }
     return self;
 }
-
+- (void)dealloc
+{
+    [_swipeRecognizer release];
+    [super dealloc];
+}
 - (void)drawRect:(CGRect)rect
 {
     [image drawAtPoint:CGPointZero];
 }
 
+- (void)setRecognizer
+{
+    BOOL isNext = NO;
+    
+    if ([blankTile frame].origin.y == [self frame].origin.y) {
+        if ([blankTile frame].origin.x + _width == [self frame].origin.x) {
+            [_swipeRecognizer setDirection:UISwipeGestureRecognizerDirectionLeft];
+            isNext = YES;
+        }
+        if ([blankTile frame].origin.x - _width == [self frame].origin.x) {
+            [_swipeRecognizer setDirection:UISwipeGestureRecognizerDirectionRight];
+            isNext = YES;
+        }
+    }
+    if ([blankTile frame].origin.x == [self frame].origin.x) {
+        if ([blankTile frame].origin.y + _height == [self frame].origin.y) {
+            [_swipeRecognizer setDirection:UISwipeGestureRecognizerDirectionUp];
+            isNext = YES;
+        }
+        if ([blankTile frame].origin.y - _height == [self frame].origin.y) {
+            [_swipeRecognizer setDirection:UISwipeGestureRecognizerDirectionDown];
+            isNext = YES;
+        }
+    }
+    [self removeGestureRecognizer:_swipeRecognizer];
+    if (isNext) {
+        [self addGestureRecognizer:_swipeRecognizer];
+    } else {
+        [self removeGestureRecognizer:_swipeRecognizer];
+    }
+}
+
+- (void) swipe:(UISwipeGestureRecognizer *)recognizer {        
+    // swap with blank tile
+    CGRect rect = [blankTile frame];
+    [blankTile setFrame:[self frame]];
+    [self setFrame:rect];
+    
+    /* set recognizer for each tiles */
+    FBFAppDelegate *app = (FBFAppDelegate *)[[UIApplication sharedApplication] delegate];
+    FBFViewController *controller = app.viewController;
+    [controller oneTileRelocated];
+}
+
 #pragma mark - UIResponder
 
+/*  
+ Use Gesture recognizer instead 
+ 
 // On begining of touch, keep touch start point
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -137,4 +191,5 @@
         [self setFrame:_startRect];
     }
 }
+*/
 @end
